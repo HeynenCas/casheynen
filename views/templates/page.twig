@@ -1,0 +1,14 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+    <div class="default-page">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12">
+                    <h1>{{ post.title }}</h1>
+                    {{ post.content }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

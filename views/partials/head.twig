@@ -1,0 +1,15 @@
+<head>
+    <meta charset="{{ site.charset }}" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="author" href="https://www.casheynen.nl" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+    <link rel="stylesheet" href="{{ site.theme.link }}//dist/style.css" type="text/css" media="screen" />
+
+    {% do action('get_header') %}
+    {{ function('wp_head') }}
+</head>
