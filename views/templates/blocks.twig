@@ -1,0 +1,11 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+	<div class="blocks">
+		{% for block in blocks %}
+			<div class="block-{{ loop.index }}{% if loop.last %} last-block{% endif%} block {{ block.acf_fc_layout }}">
+				{% include 'blocks/'~ block.acf_fc_layout ~'.twig' ignore missing with {'index': loop.index, "is_block_page" : 1 } %}
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

@@ -4,21 +4,40 @@
         {% include 'partials/head.twig' %}
     {% endblock %}
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let defaultTitle = document.title;
+
+            document.addEventListener("visibilitychange", function () {
+                if (document.hidden) {
+                    document.title = "Don't leave! 😢";
+                } else {
+                    document.title = defaultTitle;
+                }
+            });
+        });
+    </script>
     <body class="{{ body_class }}">
+
+        <div class="gradient-blur-top">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="cursor-dot"></div>
+        <div class="cursor-trail"></div>
+
         {{ function('wp_body_open') }}
 
         {% include "partials/navigation.twig" %}
 
-        <div class="content">
-            {% if title %}
-                <h1>{{ title }}</h1>
-            {% endif %}
-            <div class="wrapper">
-                {% block content %}
-                    Sorry, no content
-                {% endblock %}
-            </div>
-        </div>
+        {% block content %}
+            Sorry, no content
+        {% endblock %}
 
         {% block footer %}
             {% include 'partials/footer.twig' %}
@@ -27,5 +46,14 @@
         {% include "partials/scripts.twig" %}
         {{ function('wp_footer') }}
         {% do action('get_footer') %}
+
+        <div class="gradient-blur-bottom">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </body>
 </html>

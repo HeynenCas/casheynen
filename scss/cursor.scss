@@ -1,0 +1,30 @@
+.cursor-dot {
+  width: .5rem;
+  height: .5rem;
+  background-color: $color-white;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s ease-out, opacity 0.2s ease-in-out;
+  z-index: 1001;
+}
+
+.cursor-trail {
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 1rem rgba(255,255,255,0.1);
+  border-radius: 50%;
+  //opacity: .2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s ease-out, opacity 0.2s ease-in-out;
+  z-index: 1000;
+}

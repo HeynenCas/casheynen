@@ -1,0 +1,19 @@
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col col-left">
+                <div class="image">
+                    <img src="{{ TimberImage(block.image)|resize(1200,1200) }}" alt="{{ TimberImage(block.image).alt }}">
+                    <span>Cas Heynen - <span id="age"></span> years - Dutch</span>
+                    <span class="greeting">Hey there <span class="wave">👋🏻</span></span>
+                </div>
+            </div>
+            <div class="col col-right">
+                <h2>{{ block.title }}</h2>
+                <div class="content">
+                    {{ block.text }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

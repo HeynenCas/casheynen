@@ -15,15 +15,6 @@ use Timber\Timber;
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/src/StarterSite.php';
 
-if (function_exists('acf_add_options_page')) {
-    acf_add_options_page();
-}
-
-add_filter('timber/context', function ($context) {
-    $context['socials'] = get_fields('option');
-    return $context;
-});
-
 Timber::init();
 
 new StarterSite();

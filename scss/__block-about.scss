@@ -1,0 +1,160 @@
+.about {
+  //background: linear-gradient(180deg, rgba(28,28,28,0) 0%, rgba(28,28,28,1) 20%, rgba(28,28,28,1) 100%);
+  padding: 10rem 0;
+
+  .container {
+
+    .row {
+      align-items: center;
+
+      .col-left {
+        width: 35%;
+
+        .image {
+          width: 90%;
+          background-color: $color-light;
+          border-radius: .2rem;
+          box-shadow: 0 0 2rem rgba(28,28,28,0.5);
+          box-sizing: border-box;
+          padding: .6rem .6rem .6rem .6rem;
+          -webkit-transform: rotate(-2deg);
+          -ms-transform: rotate(-2deg);
+          -moz-transform: rotate(-2deg);
+          -o-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+          text-align: center;
+          position: relative;
+          transition: .3s ease-in-out;
+
+          img {
+            width: 100%;
+            border-radius: .2rem;
+            margin-bottom: .2rem;
+          }
+
+          span {
+            color: $color-dark;
+            font-family: $font-handwritten;
+            //font-style: italic;
+            font-size: 1.8rem;
+          }
+
+          .greeting {
+            color: $color-light;
+            font-size: 2rem;
+            -webkit-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
+            -moz-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+            position: absolute;
+            top: 1rem;
+            right: .5rem;
+            z-index: -1;
+            transition: .4s ease-in-out;
+
+            .wave {
+              margin-left: .2rem;
+
+              img {
+                animation: wave 1.5s ease-in-out infinite;
+              }
+
+            }
+
+            @keyframes wave {
+              0% {
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg);
+                transform: rotate(20deg);
+              }
+              20% {
+                -webkit-transform: rotate(5deg);
+                -ms-transform: rotate(5deg);
+                -moz-transform: rotate(5deg);
+                -o-transform: rotate(5deg);
+                transform: rotate(5deg);
+              }
+              38% {
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg);
+                transform: rotate(20deg);
+              }
+              58% {
+                -webkit-transform: rotate(5deg);
+                -ms-transform: rotate(5deg);
+                -moz-transform: rotate(5deg);
+                -o-transform: rotate(5deg);
+                transform: rotate(5deg);
+              }
+              75% {
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg);
+                transform: rotate(20deg);
+              }
+              100% {
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg);
+                transform: rotate(20deg);
+              }
+            }
+
+          }
+
+          &:hover {
+            -webkit-transform: rotate(-1deg);
+            -ms-transform: rotate(-1deg);
+            -moz-transform: rotate(-1deg);
+            -o-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+
+            .greeting {
+              right: -10rem;
+              -webkit-transform: rotate(-4deg);
+              -ms-transform: rotate(-4deg);
+              -moz-transform: rotate(-4deg);
+              -o-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+            }
+
+          }
+
+        }
+
+      }
+
+      .col-right {
+        width: 65%;
+
+        .content {
+
+          p {
+
+            &:last-child {
+              margin-bottom: .8rem;
+            }
+
+          }
+
+          .accent {
+            font-family: $font-accent;
+            font-style: italic;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

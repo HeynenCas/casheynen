@@ -1,3 +1,57 @@
+*::-moz-selection {
+  background-color: rgba(255,60,0,0.3);
+  color: $color-light;
+}
+*::selection {
+  background-color: rgba(255,60,0,0.3);
+  color: $color-light;
+}
+
+html {
+  cursor: none;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0 auto;
+  font-family: $font-default;
+  color: $color-light;
+  background-color: $color-dark;
+  //background-color: red;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    //width: .5rem;
+    background-color: $color-dark;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-white;
+
+    &:hover {
+      background-color: $color-dark;
+    }
+
+  }
+
+  .container {
+    width: 90%;
+    margin-left: 5%;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+    pointer-events: none;
+  }
+
 }

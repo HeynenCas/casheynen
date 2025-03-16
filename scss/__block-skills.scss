@@ -1,0 +1,179 @@
+.skills {
+  //background: linear-gradient(180deg, rgba(28,28,28,0) 0%, rgba(28,28,28,1) 50%, rgba(28,28,28,1) 100%);
+  //background-color: $color-orange;
+  padding: 10rem 0;
+  position: relative;
+
+  .container {
+
+    .row {
+
+      .col-left {
+        width: 55%;
+
+        .content {
+
+          p {
+
+            &:last-child {
+              margin-bottom: .8rem;
+            }
+
+          }
+
+          .accent {
+            font-family: $font-accent;
+            font-style: italic;
+          }
+
+        }
+
+      }
+
+      .col-right {
+        width: 45%;
+        box-sizing: border-box;
+        padding-left: 2rem;
+
+        .terms {
+          mix-blend-mode: overlay;
+          font-size: 3.8rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 2rem;
+
+          span {
+            margin-left: 1.5rem;
+          }
+
+          .accent {
+            font-family: $font-accent;
+            font-style: italic;
+            font-weight: 500;
+            text-transform: none;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .fade-1 {
+    width: 25%;
+    height: 25rem;
+    background-color: $color-orange;
+    border-radius: 50%;
+    filter: blur(8rem);
+    opacity: .8;
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+    z-index: -1;
+    animation: fade1 5.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes fade1 {
+    0% {
+      width: 25%;
+      height: 25rem;
+      filter: blur(8rem);
+      opacity: .8;
+      right: 25%;
+      bottom: 0;
+    }
+    10% {}
+    20% {}
+    30% {
+      width: 20%;
+      height: 24rem;
+      filter: blur(7rem);
+      opacity: .7;
+      right: 25%;
+      bottom: 0;
+    }
+    40% {}
+    50% {
+      width: 20%;
+      height: 24rem;
+      filter: blur(7rem);
+      opacity: .6;
+      right: 25%;
+      bottom: 3%;
+    }
+    60% {}
+    70% {}
+    80% {}
+    90% {
+      width: 25%;
+      height: 25rem;
+      filter: blur(8rem);
+      opacity: .8;
+      right: 23%;
+      bottom: 0;
+    }
+    100% {
+      width: 25%;
+      height: 25rem;
+      filter: blur(8rem);
+      opacity: .8;
+      right: 25%;
+      bottom: 0;
+    }
+  }
+
+  .fade-2 {
+    width: 16%;
+    aspect-ratio: 1;
+    background-color: $color-red;
+    border-radius: 50%;
+    filter: blur(10rem);
+    opacity: .7;
+    position: absolute;
+    right: 10%;
+    bottom: 23%;
+    z-index: -2;
+    animation: fade2 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes fade2 {
+    0% {
+      width: 16%;
+      filter: blur(10rem);
+      opacity: .7;
+      right: 10%;
+      bottom: 23%;
+    }
+    10% {}
+    20% {}
+    30% {}
+    40% {
+      width: 15%;
+      filter: blur(10rem);
+      opacity: .8;
+      right: 9%;
+      bottom: 24%;
+    }
+    50% {}
+    60% {}
+    70% {}
+    80% {
+      width: 17%;
+      filter: blur(9rem);
+      opacity: .6;
+      right: 11%;
+      bottom: 23%;
+    }
+    90% {}
+    100% {
+      width: 16%;
+      filter: blur(10rem);
+      opacity: .7;
+      right: 10%;
+      bottom: 23%;
+    }
+  }
+
+}
