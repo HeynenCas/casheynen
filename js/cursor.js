@@ -49,3 +49,19 @@ document.addEventListener("mouseenter", () => {
     cursorDot.style.opacity = "1";
     cursorTrail.style.opacity = "1";
 });
+
+const links = document.querySelectorAll("a");
+
+links.forEach(link => {
+    link.addEventListener("mouseenter", () => {
+        cursorTrail.style.transform = "translate(-50%, -50%) scale(1.25)";
+        cursorTrail.style.border = "1px solid rgba(222,221,220,0.35)";
+        cursorTrail.style.boxShadow = "0 0 1rem rgba(222,221,220,0.15)";
+    });
+
+    link.addEventListener("mouseleave", () => {
+        cursorTrail.style.transform = "translate(-50%, -50%) scale(1)";
+        cursorTrail.style.border = "1px solid rgba(222,221,220,0.3)";
+        cursorTrail.style.boxShadow = "0 0 1rem rgba(222,221,220,0.1)";
+    });
+});

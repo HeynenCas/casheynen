@@ -10,6 +10,7 @@ $context = Timber::context();
 $post = Timber::get_post();
 $context['post'] = $post;
 $context['is_block_page'] = true;
+$context['is_front_page'] = is_front_page();
 $context['blocks'] = get_field('blocks');
 
 // Last 3 posts

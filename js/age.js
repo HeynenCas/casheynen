@@ -11,4 +11,6 @@ function updateAge() {
     document.getElementById("age").textContent = age;
 }
 
-updateAge();
+if (document.getElementById("age")) {
+    updateAge();
+}

@@ -1,0 +1,205 @@
+.work {
+  padding: 7rem 0 10rem 0;
+  //background: linear-gradient(180deg,rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0) 80%, rgba(255, 60, 0, .2) 91%, rgba(28, 28, 28, 0) 100%);
+  //background: linear-gradient(180deg,rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0) 85%, rgba(222, 221, 220, 1) 100%);
+  //background-color: $color-orange;
+  //background-color: $color-light;
+
+  .container {
+
+    .row {
+
+      .col {
+
+        h2 {
+          margin-bottom: 1.6rem;
+        }
+
+        .work-wrap {
+          width: calc(50% - 1rem);
+          //background-color: red;
+          box-sizing: border-box;
+          display: inline-block;
+          margin-bottom: 2.5rem;
+
+          &:nth-child(even) {
+            margin-right: 1.72rem;
+          }
+
+          .image {
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            user-select: none;
+
+            img {
+              width: 100%;
+              border-radius: .2rem;
+            }
+
+          }
+
+          .content {
+            //width: 100%;
+            box-sizing: border-box;
+            //display: inline-block;
+            display: flex;
+            flex-wrap: wrap;
+            //align-items: flex-start;
+            align-items: stretch;
+
+            h3 {
+              margin-top: .5rem;
+              margin-bottom: .5rem;
+            }
+
+            p {
+              margin: 0;
+              //font-family: $font-accent;
+              //font-style: italic;
+              //font-weight: 400;
+              opacity: .6;
+            }
+
+          }
+
+          .content-left {
+            width: 80%;
+            box-sizing: border-box;
+            padding-right: .5rem;
+          }
+
+          .content-right {
+            width: 20%;
+            text-align: right;
+            box-sizing: border-box;
+            padding-top: 1rem;
+            position: relative;
+
+            .deliverables {
+              margin-bottom: 2rem;
+
+              p {
+                font-family: $font-accent;
+                font-style: italic;
+                font-weight: 400;
+                font-size: .9rem;
+              }
+
+            }
+
+            .view {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              user-select: none;
+
+              a {
+                text-decoration: none;
+                color: $color-light;
+                //font-weight: 700;
+                transition: .3s;
+
+                &:hover {
+                  color: $color-white;
+                  text-shadow: 0 0 1rem rgba(222, 221, 220, 0.4);
+
+                  svg {
+                    color: $color-white;
+                    backdrop-filter: drop-shadow(0 0 1rem rgba(222, 221, 220, 0.4));
+                    margin-right: -.25rem;
+                  }
+
+                }
+
+                svg {
+                  width: 1.8rem;
+                  display: inline-block;
+                  margin-bottom: -.55rem;
+                  transition: .3s;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+        .view-all-wrap {
+          text-align: center;
+          margin-top: 1.5rem;
+          position: relative;
+
+          .view-all {
+            text-align: center;
+            text-decoration: none;
+            color: $color-light;
+            font-size: 1.4rem;
+            font-weight: 700;
+            transition: .3s;
+
+            &:hover {
+              margin-left: .5rem;
+              color: $color-white;
+              text-shadow: 0 0 1rem rgba(222, 221, 220, 0.4);
+
+              svg {
+                color: $color-white;
+                backdrop-filter: drop-shadow(0 0 1rem rgba(222, 221, 220, 0.4));
+                margin-right: -.25rem;
+              }
+            }
+
+            svg {
+              width: 2.5rem;
+              display: inline-block;
+              margin-bottom: -.85rem;
+            }
+
+          }
+
+          .fade {
+            width: 50%;
+            height: 100%;
+            background-color: $color-orange;
+            opacity: .8;
+            border-radius: 50%;
+            filter: blur(3rem);
+            position: absolute;
+            top: 0;
+            left: 25%;
+            z-index: -1;
+            animation: fade 5s ease-in-out infinite alternate;
+          }
+
+
+          @keyframes fade {
+            0% {
+              opacity: .8;
+              filter: blur(3rem);
+            }
+            40% {
+              opacity: 1;
+              filter: blur(2.8rem);
+            }
+            80% {
+              opacity: .8;
+              filter: blur(3.2rem);
+            }
+            100% {
+              opacity: .8;
+              filter: blur(3rem);
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

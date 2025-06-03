@@ -17,7 +17,27 @@
             });
         });
     </script>
-    <body class="{{ body_class }}">
+
+    <body class="{{ body_class }} no-scroll">
+
+        <!--<div class="overlay">
+            <svg>
+                <filter id="noise">
+                    <feTurbulence id="turbulence">
+                        <animate attributeName="baseFrequency" dur="540s" values="0.9 0.9; 0.8 0.8; 0.9 0.9;" repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+                </filter>
+            </svg>
+        </div>-->
+
+        <!--<div id="loading-screen" class="loading-screen">
+            <div id="progress-text" class="progress-text">0%</div>
+            <div class="loading-text">Portfolio loading...</div>
+            <div id="progress-container" class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>-->
 
         <div class="gradient-blur-top">
             <div></div>

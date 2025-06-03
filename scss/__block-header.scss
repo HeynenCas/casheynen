@@ -90,7 +90,7 @@
     opacity: .8;
     position: absolute;
     right: 5%;
-    bottom: 4rem;
+    bottom: 4.5rem;
 
     svg {
       height: 2rem;
@@ -231,6 +231,553 @@
       right: 14%;
       bottom: 3%;
     }
+  }
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+  .header {
+
+    .container {
+
+      h1 {
+        margin: 0 0 -1.5rem 0;
+        font-size: 8.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 3.5rem;
+        font-family: $font-accent;
+        font-style: italic;
+        font-weight: 500;
+
+        span {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 500;
+        }
+
+      }
+
+    }
+
+    img {
+      width: 130%;
+      position: absolute;
+      left: 0;
+      bottom: 5rem;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+      //opacity: .6;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 949px) {
+
+  .header {
+
+    .container {
+
+      h1 {
+        margin: 0 0 -1.5rem 0;
+        font-size: 6.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 3rem;
+        font-family: $font-accent;
+        font-style: italic;
+        font-weight: 500;
+
+        span {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 500;
+        }
+
+      }
+
+    }
+
+    img {
+      width: 130%;
+      position: absolute;
+      left: 0;
+      bottom: 5rem;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+      //opacity: .6;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 749px) {
+
+  .header {
+
+    .container {
+
+      h1 {
+        margin: 0 0 .5rem 0;
+        font-size: 6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 5.5rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-family: $font-accent;
+        font-style: italic;
+        font-weight: 500;
+
+        span {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 500;
+        }
+
+      }
+
+    }
+
+    img {
+      width: 160%;
+      position: absolute;
+      left: -15%;
+      bottom: 8rem;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+      //opacity: .6;
+    }
+
+    .fade-bottom-1 {
+      width: 25%;
+      height: 25rem;
+      background-color: $color-orange;
+      border-radius: 50%;
+      filter: blur(8rem);
+      opacity: .8;
+      position: absolute;
+      right: -5%;
+      bottom: 0;
+      z-index: -1;
+      animation: fadeBottom1 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeBottom1 {
+      0% {
+        width: 35%;
+        height: 30rem;
+        filter: blur(8rem);
+        opacity: .8;
+        right: 5%;
+        bottom: -5rem;
+      }
+      10% {}
+      20% {}
+      30% {}
+      40% {}
+      50% {
+        width: 30%;
+        height: 29rem;
+        filter: blur(7rem);
+        opacity: .6;
+        right: 5%;
+        bottom: -5rem;
+      }
+      60% {}
+      70% {}
+      80% {
+        width: 35%;
+        height: 30rem;
+        filter: blur(8rem);
+        opacity: .8;
+        right: 3%;
+        bottom: -3rem;
+      }
+      90% {}
+      100% {
+        width: 35%;
+        height: 30rem;
+        filter: blur(8rem);
+        opacity: .8;
+        right: 5%;
+        bottom: -5rem;
+      }
+    }
+
+    .fade-bottom-2 {
+      width: 16%;
+      aspect-ratio: 1;
+      background-color: $color-red;
+      border-radius: 50%;
+      filter: blur(10rem);
+      opacity: .7;
+      position: absolute;
+      right: 14%;
+      bottom: 3%;
+      z-index: -2;
+      animation: fadeBottom2 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeBottom2 {
+      0% {
+        width: 20%;
+        filter: blur(10rem);
+        opacity: .7;
+        right: 14%;
+        bottom: 3%;
+      }
+      10% {}
+      20% {}
+      30% {}
+      40% {
+        width: 20%;
+        filter: blur(10rem);
+        opacity: .8;
+        right: 13%;
+        bottom: 4%;
+      }
+      50% {}
+      60% {}
+      70% {}
+      80% {
+        width: 21%;
+        filter: blur(9rem);
+        opacity: .6;
+        right: 15%;
+        bottom: 3%;
+      }
+      90% {}
+      100% {
+        width: 20%;
+        filter: blur(10rem);
+        opacity: .7;
+        right: 14%;
+        bottom: 3%;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 549px) {
+
+  .header {
+
+    .container {
+
+      h1 {
+        margin: 0 0 .5rem 0;
+        font-size: 5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 5rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 2rem;
+        font-family: $font-accent;
+        font-style: italic;
+        font-weight: 500;
+
+        span {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 500;
+        }
+
+      }
+
+    }
+
+    img {
+      width: 240%;
+      position: absolute;
+      left: -65%;
+      bottom: 8rem;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+      //opacity: .6;
+    }
+
+    .fade-bottom-1 {
+      width: 25%;
+      height: 25rem;
+      background-color: $color-orange;
+      border-radius: 50%;
+      filter: blur(8rem);
+      opacity: .8;
+      position: absolute;
+      right: -5%;
+      bottom: 0;
+      z-index: -1;
+      animation: fadeBottom1 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeBottom1 {
+      0% {
+        width: 40%;
+        height: 30rem;
+        filter: blur(6rem);
+        opacity: .8;
+        right: 5%;
+        bottom: -5rem;
+      }
+      10% {}
+      20% {}
+      30% {}
+      40% {}
+      50% {
+        width: 40%;
+        height: 29rem;
+        filter: blur(5rem);
+        opacity: .6;
+        right: 5%;
+        bottom: -5rem;
+      }
+      60% {}
+      70% {}
+      80% {
+        width: 41%;
+        height: 30rem;
+        filter: blur(6rem);
+        opacity: .8;
+        right: 3%;
+        bottom: -3rem;
+      }
+      90% {}
+      100% {
+        width: 40%;
+        height: 30rem;
+        filter: blur(6rem);
+        opacity: .8;
+        right: 5%;
+        bottom: -5rem;
+      }
+    }
+
+    .fade-bottom-2 {
+      width: 16%;
+      aspect-ratio: 1;
+      background-color: $color-red;
+      border-radius: 50%;
+      filter: blur(10rem);
+      opacity: .7;
+      position: absolute;
+      right: 14%;
+      bottom: 3%;
+      z-index: -2;
+      animation: fadeBottom2 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeBottom2 {
+      0% {
+        width: 20%;
+        filter: blur(7rem);
+        opacity: .7;
+        right: 14%;
+        bottom: 3%;
+      }
+      10% {}
+      20% {}
+      30% {}
+      40% {
+        width: 20%;
+        filter: blur(8rem);
+        opacity: .8;
+        right: 13%;
+        bottom: 4%;
+      }
+      50% {}
+      60% {}
+      70% {}
+      80% {
+        width: 21%;
+        filter: blur(6rem);
+        opacity: .6;
+        right: 15%;
+        bottom: 3%;
+      }
+      90% {}
+      100% {
+        width: 20%;
+        filter: blur(7rem);
+        opacity: .7;
+        right: 14%;
+        bottom: 3%;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 399px) {
+
+  .header {
+
+    .container {
+
+      h1 {
+        margin: 0 0 .5rem 0;
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 4rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-family: $font-accent;
+        font-style: italic;
+        font-weight: 500;
+
+        span {
+          font-family: $font-default;
+          font-style: normal;
+          font-weight: 500;
+        }
+
+      }
+
+    }
+
+    img {
+      width: 240%;
+      position: absolute;
+      left: -65%;
+      bottom: 8rem;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+      //opacity: .6;
+    }
+
+    .fade-bottom-1 {
+      width: 25%;
+      height: 25rem;
+      background-color: $color-orange;
+      border-radius: 50%;
+      filter: blur(8rem);
+      opacity: .8;
+      position: absolute;
+      right: -5%;
+      bottom: 0;
+      z-index: -1;
+      animation: fadeBottom1 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeBottom1 {
+      0% {
+        width: 40%;
+        height: 30rem;
+        filter: blur(5rem);
+        opacity: .8;
+        right: 5%;
+        bottom: -5rem;
+      }
+      10% {}
+      20% {}
+      30% {}
+      40% {}
+      50% {
+        width: 40%;
+        height: 29rem;
+        filter: blur(4rem);
+        opacity: .6;
+        right: 5%;
+        bottom: -5rem;
+      }
+      60% {}
+      70% {}
+      80% {
+        width: 41%;
+        height: 30rem;
+        filter: blur(5rem);
+        opacity: .8;
+        right: 3%;
+        bottom: -3rem;
+      }
+      90% {}
+      100% {
+        width: 40%;
+        height: 30rem;
+        filter: blur(5rem);
+        opacity: .8;
+        right: 5%;
+        bottom: -5rem;
+      }
+    }
+
+    .fade-bottom-2 {
+      width: 16%;
+      aspect-ratio: 1;
+      background-color: $color-red;
+      border-radius: 50%;
+      filter: blur(10rem);
+      opacity: .7;
+      position: absolute;
+      right: 14%;
+      bottom: 3%;
+      z-index: -2;
+      animation: fadeBottom2 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeBottom2 {
+      0% {
+        width: 20%;
+        filter: blur(6rem);
+        opacity: .7;
+        right: 14%;
+        bottom: 3%;
+      }
+      10% {}
+      20% {}
+      30% {}
+      40% {
+        width: 20%;
+        filter: blur(7rem);
+        opacity: .8;
+        right: 13%;
+        bottom: 4%;
+      }
+      50% {}
+      60% {}
+      70% {}
+      80% {
+        width: 21%;
+        filter: blur(5rem);
+        opacity: .6;
+        right: 15%;
+        bottom: 3%;
+      }
+      90% {}
+      100% {
+        width: 20%;
+        filter: blur(6rem);
+        opacity: .7;
+        right: 14%;
+        bottom: 3%;
+      }
+    }
+
   }
 
 }
