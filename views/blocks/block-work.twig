@@ -4,31 +4,33 @@
             <div class="col">
                 <h2>{{ block.title }}</h2>
                 {% for work in block.work %}
-                    <div class="work-wrap">
-                        <div class="image">
-                            <img src="{{ TimberImage(work.image).src|resize(1200, 750, "center")}}">
-                        </div>
-                        <div class="content">
-                            <div class="content-left">
-                                <h3>{{ work.name }}</h3>
-                                <p>{{ work.description }}</p>
+                        <a href="{{ work.link }}" class="work-wrap">
+                            <div class="image">
+                                <img src="{{ TimberImage(work.image).src|resize(1200, 750, "center")}}">
                             </div>
-                            <div class="content-right">
-                                <div class="deliverables">
-                                    {% for item in work.deliverables %}
-                                        <p>{{ item }}</p>
-                                    {% endfor %}
+                            <div class="content">
+                                <div class="content-left">
+                                    <h3>{{ work.name }}</h3>
+                                    <p>{{ work.description }}</p>
                                 </div>
-                                <div class="view">
-                                    <a href="{{ work.link }}">View project
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                                        </svg>
-                                    </a>
+                                <div class="content-right">
+                                    <div class="deliverables">
+                                        {% for item in work.deliverables %}
+                                            <p>{{ item }}</p>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="view">
+                                        <span>
+                                            View project
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </a>
+
                 {% endfor %}
                 {% if is_front_page %}
                     <div class="view-all-wrap">

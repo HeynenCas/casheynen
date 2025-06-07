@@ -158,3 +158,159 @@
   }
 
 }
+
+@media only screen and (max-width: 1200px) {
+
+  .about {
+
+    .container {
+
+      .row {
+
+        .col-left {
+
+          .image {
+
+            span {
+              font-size: 1.4rem;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+  .about {
+    padding: 10rem 0;
+
+    .container {
+
+      .row {
+        align-items: center;
+
+        .col-left {
+          order: 2;
+          width: 100%;
+          margin-top: 2rem;
+
+          .image {
+            width: 100%;
+            background-color: $color-light;
+            border-radius: .2rem;
+            box-shadow: 0 0 2rem rgba(28,28,28,0.5);
+            box-sizing: border-box;
+            padding: .6rem .6rem .6rem .6rem;
+            -webkit-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
+            -moz-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+            text-align: center;
+            position: relative;
+            transition: .3s ease-in-out;
+
+            img {
+              width: 100%;
+              border-radius: .2rem;
+              margin-bottom: .2rem;
+            }
+
+            span {
+              color: $color-dark;
+              font-family: $font-handwritten;
+              //font-style: italic;
+              font-size: 1.5rem;
+            }
+
+            .greeting {
+              display: none;
+            }
+
+            &:hover {
+              -webkit-transform: rotate(-1deg);
+              -ms-transform: rotate(-1deg);
+              -moz-transform: rotate(-1deg);
+              -o-transform: rotate(-1deg);
+              transform: rotate(-1deg);
+
+              .greeting {
+                right: -10rem;
+                -webkit-transform: rotate(-4deg);
+                -ms-transform: rotate(-4deg);
+                -moz-transform: rotate(-4deg);
+                -o-transform: rotate(-4deg);
+                transform: rotate(-4deg);
+              }
+
+            }
+
+          }
+
+        }
+
+        .col-right {
+          width: 100%;
+
+          .content {
+
+            p {
+
+              &:last-child {
+                margin-bottom: .8rem;
+              }
+
+            }
+
+            .accent {
+              font-family: $font-accent;
+              font-style: italic;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .about {
+
+    .container {
+
+      .row {
+
+        .col-left {
+
+          .image {
+
+            span {
+              font-size: 1.3rem;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
