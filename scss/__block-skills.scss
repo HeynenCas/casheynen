@@ -188,7 +188,25 @@
 
 @media only screen and (max-width: 1200px) {
 
+  .skills {
 
+    .container {
+
+      .row {
+
+        .col-left {
+          width: 100%;
+        }
+
+        .col-right {
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
 
 }
 

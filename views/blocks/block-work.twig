@@ -1,10 +1,20 @@
-<div class="work">
+<div class="work" id="work">
     <div class="container">
+        {% if not is_front_page %}
+            <div class="back">
+                <a href="{{ site.link }}#work">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                    </svg>
+                    Back
+                </a>
+            </div>
+        {% endif %}
         <div class="row">
             <div class="col">
                 <h2>{{ block.title }}</h2>
                 {% for work in block.work %}
-                        <a href="{{ work.link }}" class="work-wrap">
+                        <a href="{{ work.link }}" target="_blank" class="work-wrap">
                             <div class="image">
                                 <img src="{{ TimberImage(work.image).src|resize(1200, 750, "center")}}">
                             </div>
@@ -19,14 +29,16 @@
                                             <p>{{ item }}</p>
                                         {% endfor %}
                                     </div>
-                                    <div class="view">
-                                        <span>
-                                            View project
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                                            </svg>
-                                        </span>
-                                    </div>
+                                    {% if work.link %}
+                                        <div class="view">
+                                            <span>
+                                                View project
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </a>

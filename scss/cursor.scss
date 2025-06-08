@@ -30,3 +30,15 @@
   //mix-blend-mode: exclusion;
   z-index: 1000;
 }
+
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+
+  .cursor-dot {
+    display: none;
+  }
+
+  .cursor-trail {
+    display: none;
+  }
+
+}
